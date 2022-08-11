@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title: add your Portfolio websites's title here -->
+  <title>Ferhat ÖZÇELİK | Developer</title>
+
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="ferhatozcelik, mobile developer, android, android developer" />
+
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="Merhaba Ben Ferhat ÖZÇELİK Süleyman Demirel Üniversitesi Fizik Bölümünden 2021 yılında Mezun
+  oldum. 2012 yılında hobi olarak başladığım yazılım dünyasında tam zamanlı olarak çalışarak
+  içerik üretiyorum. Bir Uygulama yazmak ya da bir sorunu çözmek benim tutkum." />
+
+  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+  <link rel="icon" type="image/png" href="./assets/fo-logo.png" />
+
+  <!-- Add your primary-theme color for the value of content -->
+  <meta name="theme-color" content="#5b86e5" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <!-- Fill content with the URL of this portfolio you'll host -->
+  <meta property="og:url" content="https://ferhatozcelik.com/" />
+  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+  <meta property="og:title" content="Ferhat ÖZÇELİK | Android Developer" />
+  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+  <meta property="og:description" content="Ferhat ÖZÇELİK | Android Developer" />
+  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+
+  <meta
+      property="og:image"
+      content="https://ferhatozcelik.com/assets/web_view.png"
+    />
+      
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- Again fill content attr with the URL of this portfolio you'll host -->
+  <meta property="twitter:url" content="https://ferhatozcelik.com/" />
+  <!-- Recommended to use the same text used within <title> element -->
+  <meta property="twitter:title" content="Ferhat ÖZÇELİK | Android Developer" />
+  <!-- short description that shows up while your portfolio is shared -->
+
+  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://ferhatozcelik.com/assets/web_view.png"
+    />
+
+  <!-- link tags -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
+
+
+  <!-- Analytics -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX67TQHTH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WX67TQHTH7');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5KC7RJF');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KC7RJF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- /Analytics -->
+  <script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js@v1.2.1/dist/verly.bundle.js"></script>
+
+  <script>
+    window.onload = function () {
+      let examples = [
+        { title: 'behavior', src: './index.html' },
+      ];
+
+
+      const dom_ui = document.getElementById('ui');
+      const frame = document.getElementById('frame');
+
+      frame.src = examples[0].src;
+      if (window.location.hash) {
+        frame.src = window.location.hash.replace('#', '');
+      }
+      var content = frame.contentWindow.document.body;
+
+      content.style.padding = 0;
+      content.style.margin = 0;
+      for (let i = 0; i < examples.length; i++) {
+        let button = document.createElement('button');
+        button.innerHTML = examples[i].title;
+        button.dataset.src = examples[i].src;
+        button.onclick = function (e) {
+          frame.src = button.dataset.src;
+          window.location.hash = button.dataset.src;
+        }
+        dom_ui.appendChild(button);
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- partial -->
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Merhaba, Ben <span class="text-color-main name">Ferhat ÖZÇELİK</span>
+        </h1>
+
+        <h1 class="hero-title-m">
+          Android Geliştirici ve Fizikçi.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="https://play.google.com/store/apps/dev?id=6929581014777072329">Google Play</a>
+          <a class="cta-btn cta-btn--hero" href="https://github.com/ferhatozcelik">Github</a>
+        </p>
+
+      </section>
+
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+
+  </div>
+  <script src="./javascript/script.js"></script>
+  <!-- END Hero Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Hakkında</h2>
+      <div class="row about-wrapper">
+        <div class="about-wrapper__image">
+          <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
+        </div>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            Merhaba Ben Ferhat ÖZÇELİK Süleyman Demirel Üniversitesi Fizik Bölümünden 2021 yılında Mezun
+            oldum. 2012 yılında hobi olarak başladığım yazılım dünyasında tam zamanlı olarak çalışarak
+            içerik üretiyorum. Bir Uygulama yazmak ya da bir sorunu çözmek benim tutkum.
+          </p>
+          <p class="about-wrapper__info-text">
+            2019 yılında SDÜ Yenilikçi Teknolojiler Uygulama ve Araştırma Merkezi Staj Yaparken Gömülü sistemler ile çalışmaya başladım. 
+            Yaşadığımız Covid-19 sürecinde avantaja çevirerek TÜBİTAK 2209-A - Üniversite Öğrencileri Araştırma Projeleri programında destek aldım. Proje kapsamında
+            laboratuvar çalışmalarında kullanılması üzerine ince filim kaplama cihazı tasarladım ve üretim. 
+          </p>
+          <span class="about-wrapper__cta">
+            <a href="https://ferhatozcelik.com/cv" target="_blank" class="cta-btn cta-btn--resume">Öz Geçmiş</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!--Apps Section-->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Uygulamalar</h2>
+
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">ONCV | Online CV</h3>
+              <p class="project-wrapper__text-info">
+                ON CV | Hızlı ve kolayca modern CV'nizi hazırlayın.
+                Kalabalığın arasından sıyrılın ve iş bulun! Hemen profesyonel bir CV hazırlayın ve yayınlayın.
+                Kağıt Derdi olmadan link ile anında paylaş.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="https://play.google.com/store/apps/details?id=com.ferhatozcelik.oncv" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Hemen İndir</a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img src="./assets/project_oncv.png" class="img-fluid" alt="Project Image" />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Zinciri Kırma</h3>
+            <p class="project-wrapper__text-info">
+              Zinciri Kırma | Hedefler, Alışkanlıklar
+              Hayatımıza eklemek ve kaldırmak istediğimiz bir alışkanlığı yönetmek için bu tekniği kullanabiliriz.
+              Öncelikle bir amacımız olmalı, bir hedef belirleyip, bizi bu hedefe götürecek bir eylem belirlemek.
+              Bu eylemi (ikiye bölüp) hergün yapıp, yaptığınıza beyninizi ve kendinize ispat edip,
+              sizi motive edecek görebileceğiniz yerde bulunan bir takvimi aksatmadan yani zinciri kırmadan işaretlemek.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://play.google.com/store/apps/details?id=ferhatozcelik.zincirikirma" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Hemen İndir</a>
+              
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/project_zincirikirma.png" class="img-fluid" alt="Project Image" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+        
+
+
+
+      <!-- Each .row is a project -->
+      <article class="row">
+        <div class="project-wrapper__text">
+          <h3 class="project-wrapper__text-title">Spin Coater | Dönel Kaplama Sistemi</h3>
+          <p class="project-wrapper__text-info">
+            Bu proje kapsamında, döndürerek kaplama yöntemi ile ince film kaplamak için 
+kullanılan dönel kaplama sisteminin tasarlanması amaçlanmıştır. Üretilen sisteme eklenen bluetooth özelliği ile kablosuz kontrol 
+sayesinde cihazdan gelen nem, sıcaklık, dönüş hızı bilgileri mobil uygulamaya aktarılmış
+ve böylece uygulama ile kaplama sistem tamamen uzaktan kontrol edilebilmiştir.
+          </p>
+          <div class="project-wrapper__text-btns">
+            <a href="https://play.google.com/store/apps/details?id=com.ferhatozcelik.spincoater" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Hemen İndir</a>
+          </div>
+        </div>
+
+        <div class="project-wrapper__image">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="thumbnail rounded">
+              <img src="./assets/project_spincoater.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </a>
+        </div>
+      </article>
+      <!-- /END Project -->
+
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">My Codes | Wear QR Code</h3>
+            <p class="project-wrapper__text-info">
+              Wear OS Cihazlarında telefon uygulamasında kaydedilen QR kodlarını gösterir.
+              Örneğin; sadakat kartları, biniş kartları, Bitcoin adresi veya sadece bazı yararlı metinler
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://play.google.com/store/apps/details?id=com.ferhatozcelik.mycodes" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Hemen İndir</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/project_codes.png" class="img-fluid" alt="Project Image" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+  
+
+ 
+
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projeler</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Spin Coater</h3>
+            <p class="project-wrapper__text-info">
+              Spin kaplama ("döndürmeli kaplama", "döndürerek kaplama" veya "dönel kaplama" olarak da bilinir),
+              düz tabakalara ya da substratlara ince film uygulamak için kullanılan bir prosedürdür.
+              Genelde az miktarda bir kaplama malzemesi substratın merkezine uygulanır...
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://store.ferhatozcelik.com/" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Mağaza</a>
+              <a href="#" target="_blank" class="cta-btn text-color-main">Daha Fazla Bilgi</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://ferhatozcelik.com/spincoater/tr/index.html" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/project_zincirikirma_two.png" class="img-fluid" alt="Project Image" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+      
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Açık Kaynak</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Android Studio Debug Controller Plugin</h3>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/ferhatozcelik/Android-Studio-DebugController" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Github</a>
+              <a href="https://plugins.jetbrains.com/plugin/18732-debug-controller?preview=true" target="_blank" class="cta-btn text-color-main">Hemen İndir</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/project_debug.png" class="img-fluid" alt="Project Image" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+    <!-- Each .row is a project -->
+    <article class="row">
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Android | Java Fake Gps Detect</h3>
+        <div class="project-wrapper__text-btns">
+          <a href="https://github.com/ferhatozcelik/Fake_Gps_Detect" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Github</a>
+        </div>
+      </div>
+
+      <div class="project-wrapper__image">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <div class="thumbnail rounded">
+            <img src="./assets/project_gps.png" class="img-fluid" alt="Project Image" />
+          </div>
+        </a>
+      </div>
+    </article>
+    <!-- /END Project -->
+
+    
+    <!-- Each .row is a project -->
+    <article class="row">
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Soccer Leauge App | Fake Server Rest API</h3>
+        <div class="project-wrapper__text-btns">
+          <a href="https://github.com/ferhatozcelik/SoccerLeaugeApp" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Github</a>
+        </div>
+      </div>
+
+      <div class="project-wrapper__image">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <div class="thumbnail rounded">
+            <img src="./assets/project_soccer.png" class="img-fluid" alt="Project Image" />
+          </div>
+        </a>
+      </div>
+    </article>
+    <!-- /END Project -->
+      
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">İletişim</h2>
+      <div class="contact-wrapper">
+        <a href="mailto:info@ferhatozcelik.com" class="cta-btn cta-btn--resume">Mail Gönder</a>
+      </div>
+    </div>
+  </section>
+  <!-- END Contact Section -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#hero" class="back-to-top" aria-label="go back to top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/ferhatozcelik0" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ferhatozcelik0/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ferhatozcelik/" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ferhatozcelik" target="_blank" rel="noopener noreferrer" aria-label="github">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <hr />
+      <p class="footer__text">
+        &copy; <span id="year"></span>
+        <a>Ferhat ÖZÇELİK</a><br />Made
+        with &hearts;
+      </p>
+    </div>
+  </footer>
+  <!-- END Footer Section -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
+
+</html>
